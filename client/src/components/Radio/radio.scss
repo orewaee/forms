@@ -1,0 +1,27 @@
+.radio {
+    width: 28px;
+    height: 16px;
+
+    background-color: var( --fc_rd );
+
+    border-radius: 8px;
+
+    .radio__item {
+        width: 8px;
+        height: 8px;
+
+        background-color: var( --pc_bg );
+
+        border-radius: 4px;
+
+        margin: 4px;
+    }
+
+    &.active {
+        background-color: var( --oc_blue );
+
+        .radio__item {
+            margin-left: 16px;
+        }
+    }
+}

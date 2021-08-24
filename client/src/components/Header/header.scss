@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var( --pc_bg );
+
+    border: 1px solid var( --pc_brd );
+    border-radius: 16px;
+
+    padding: 16px;
+
+    .header__item {
+        height: 28px;
+
+        cursor: pointer;
+        
+        .header__head {
+            width: 28px;
+            height: 28px;
+
+            border-radius: 8px;
+        }
+    }
+}
+

@@ -1,0 +1,58 @@
+.login {
+    top: 50%;
+    left: 50%;
+
+    transform: translate( -50%, -50% );
+
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    & input {
+        width: 254px;
+
+        color: var( --fc_nd );
+
+        font-family: "Inter", sans-serif;
+
+        font-weight: 400;
+        font-size: 20px;
+
+        background-color: var( --pc_bg );
+
+        border: 1px solid var( --pc_brd );
+        border-radius: 16px;
+
+        outline: none;
+
+        margin-top: 16px;
+        padding: 16px;
+
+        &::placeholder {
+            color: var( --fc_rd );
+        }
+    }
+
+    .login__button {
+        width: 288px;
+
+        color: var( --pc_bg );
+
+        font-family: "Inter", sans-serif;
+
+        font-weight: 500;
+        font-size: 20px;
+
+        background-color: var( --oc_blue );
+
+        border: none;
+        border-radius: 16px;
+
+        white-space: nowrap;
+
+        cursor: pointer;
+
+        padding: 16px 28px;
+    }
+}

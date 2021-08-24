@@ -1,0 +1,50 @@
+.tabs {
+    display: flex;
+    flex-direction: row;
+    
+    .tabs__link {
+        display: block;
+
+        color: var( --fc_rd );
+
+        font-weight: 500;
+        text-decoration: none;
+
+        border-radius: 16px;
+
+        white-space: nowrap;
+
+        margin-right: 16px;
+        padding: 16px 28px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &.selected {
+            color: var( --pc_bg );
+
+            background-color: var( --fc_rd );
+        }
+
+        &:hover {
+            color: var( --pc_bg );
+
+            background-color: var( --fc_rd );
+        }
+    }
+    
+    @media ( max-width: 782px ) {
+        & {
+            flex-direction: column;
+
+            margin-top: 0;
+
+            .tabs__link {
+                text-align: center;
+
+                margin: 16px 0 0;
+            }
+        }
+    }
+}
